@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  ffmpeg-dialogue:
+    build: .
+    container_name: ffmpeg-dialogue-server
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./generated_videos:/app/generated_videos
+      - ./chunks:/app/chunks
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+      - WHISPER_MODEL=medium  # or medium for better quality
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  generated_videos:

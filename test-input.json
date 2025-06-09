@@ -1,0 +1,71 @@
+[
+  {
+    "comment": "Dynamic Family Guy Viral Video",
+    "resolution": "custom",
+    "quality": "high",
+    "width": 1080,
+    "height": 1920,
+    "scenes": [
+      {
+        "id": "scene-0",
+        "background-color": "transparent",
+        "elements": [
+          {
+            "type": "image",
+            "src": "https://drive.google.com/uc?export=download&id=1OMElq71jMkv6BbYaNkPZ9AjCwLDkuBUp",
+            "x": 10,
+            "y": 1300
+          },
+          {
+            "type": "audio",
+            "src": "https://drive.google.com/uc?export=download&id=1qMpH6EbUSWOEk4NbLsAXvh25WGrvx_Ce"
+          }
+        ]
+      },
+      {
+        "id": "scene-1",
+        "background-color": "transparent",
+        "elements": [
+          {
+            "type": "image",
+            "src": "https://drive.google.com/uc?export=download&id=1G_5yvOweSo5RWSmTNGjXpjZoU-pIxiP6",
+            "x": 500,
+            "y": 1300
+          },
+          {
+            "type": "audio",
+            "src": "https://drive.google.com/uc?export=download&id=1zI6sETsvpj9Xtn7MrmUTgtV68EsCt8RL"
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "type": "video",
+        "src": "https://drive.google.com/uc?export=download&id=1g_NluKHWr-0zU5b4rX-THc0T68y7Z3qw",
+        "z-index": -1,
+        "volume": 0.5,
+        "resize": "fit",
+        "duration": 172.75
+      },
+      {
+        "id": "q41n9kxp",
+        "type": "subtitles",
+        "settings": {
+          "style": "classic-progressive",
+          "font-family": "Luckiest Guy",
+          "font-size": 12,
+          "word-color": "#24ff03",
+          "line-color": "#FFFFFF",
+          "shadow-color": "#000000",
+          "shadow-offset": 2,
+          "box-color": "#260B1B",
+          "position": "center-top",
+          "outline-color": "#000000",
+          "outline-width": 3
+        },
+        "language": "en"
+      }
+    ]
+  }
+]
